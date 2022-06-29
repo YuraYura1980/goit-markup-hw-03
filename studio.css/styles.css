@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
 :root {
   --primery-text-color: #212121;
   --accent-color: #757575;
@@ -8,8 +19,33 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -22,10 +58,13 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 .header-span {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -40,11 +79,21 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
   color: var(--activ-color);
 }
 
-.cursors {
+.lists {
   cursor: pointer;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
@@ -52,32 +101,35 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
   color: var(--primery-text-color);
 }
 
-.header-link-act {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--activ-color);
-}
 
-.header-link-tel {
+.header-link-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: 331px;
+  /* margin-right: 50px; */
   color: var(--accent-color);
 }
 
 .link:hover,
 .link:focus {
-  color: #ffffff;
-  background-color: var(--activ-color);
+  color: var(--activ-color);
 }
 
 /* Section-main */
+/* .mains {
+  width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+
+} */
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -102,6 +154,7 @@ ul {
   color: #ffffff;
   background-color: #2196f3;
   border: none;
+  margin-left: 300px;
 }
 
 .main-btn:hover,
@@ -110,9 +163,9 @@ ul {
   background-color: yellow;
 }
 
-.heros {
+/* .heros {
   opacity: 0;
-}
+} */
 
 /* Hero */
 .hero-title {

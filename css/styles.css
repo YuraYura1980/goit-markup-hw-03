@@ -2,13 +2,40 @@
   --primery-text-color: #212121;
   --accent-color: #757575;
   --second-color: #ffffff;
+  --activ-color: #2196f3;
+  --footer-color: #2f303a;
+  --footer-rjba-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -19,37 +46,27 @@ ul {
   list-style: none;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--activ-color)
+}
+
+
 /* Header */
-.header-links:hover,
-.header-links:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-.header-link:hover,
-.header-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-/* или добавить дополнительный класс .link
-.link:hover {
-  color: #ffffff;
-  background-color: #2196f3;
-} */
-
 .header-span {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--primery-text-color);
 }
 
-/* Header */
 .header-logo {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--activ-color)
 }
 
 .header-link {
@@ -68,12 +85,10 @@ ul {
   color: var(--primery-text-color);
 }
 
-/* Section main */
-
-.section-title,
+/* .section-title,
 .project-title {
   opacity: 0;
-}
+} */
 
 .btn {
   font-family: "Roboto";
@@ -91,8 +106,8 @@ ul {
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--second-color);
+  background-color: var(--activ-color)
 }
 
 /* project*/
@@ -118,7 +133,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: #2196f3;
+  color: var(--activ-color)
 }
 
 .footer-span {
@@ -145,20 +160,22 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-rjba-color)
 }
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--second-color);
+  background-color: var(--activ-color)
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--footer-color)
 }
 
 .footer-adr:hover {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--second-color);
+  background-color: var(--activ-color)
 }
+
+
