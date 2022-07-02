@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
 :root {
   --primery-text-color: #212121;
   --accent-color: #757575;
@@ -177,5 +187,6 @@ ul {
   color: var(--second-color);
   background-color: var(--activ-color)
 }
+
 
 
