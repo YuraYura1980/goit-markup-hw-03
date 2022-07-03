@@ -249,6 +249,11 @@ padding: 0;
 
 /* Hero */
 
+.heros {
+  display: flex;
+justify-content: center
+}
+
 .hero-list {
   outline: 1px solid tomato;
   padding: 0;
@@ -259,6 +264,7 @@ padding: 0;
 }
 
 .hero-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -268,6 +274,7 @@ padding: 0;
 }
 
 .hero-text {
+   outline: 1px solid green;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -297,7 +304,14 @@ padding: 0;
 /* Team */
 
 .team-card {
+  width: 1200px;
+height: 648px;
+left: 0px;
+top: 1449px;
+
+margin-bottom: 0;
   background: #f5f4fa;
+
 }
 
 .team-logo {
@@ -311,27 +325,35 @@ padding: 0;
 
 .team-list {
   outline: 1px solid blue;
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0;
   list-style: 0;
 
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
-  margin-top: -18px;
-  /* margin-left: -5px; */
+  margin-top: - 18px;
+  margin-left: - 18px;
+  
   
 }
 
+
 .team-list > .team-item {
-  outline: 1px solid tomato;
+  outline: 1px solid green;
 
-  flex-basis: calc(100% / 4-20px);
+  flex-basis: calc(100% / 4-15px);
 
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 18px;
+  margin-left: 18px;
 
   margin-bottom: 20px;
+
+
+width: 270px;
+height: 368px;
+
+  
 }
 
 .team-title {
