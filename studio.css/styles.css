@@ -12,6 +12,7 @@ html {
   --activ-color: #2196f3;
   --second-color: #ffffff;
   --background-color: #2f303a;
+  --background-team-color: #f5f4fa;
 }
 
 body {
@@ -217,7 +218,7 @@ ul {
 }
 
 .about-list {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   display: flex;
 }
 
@@ -237,19 +238,23 @@ ul {
   color: var(--primery-text-color);
 }
 
-.about-list > about-text:not(:last-child) {
-  margin-right: 30px;
-}
-
 .about-text {
-  margin-right: 30px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  width: 270px;
+  height: 101px;
+  left: 515px;
+  top: 774px;
+}
+
+.about-list > .about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Occupation */
@@ -278,7 +283,7 @@ ul {
 /* Team */
 
 .team-card {
-  background: #f5f4fa;
+  background: var(--background-team-color);
 }
 
 .team-logo {
@@ -295,8 +300,6 @@ ul {
 }
 
 .team-list {
-  outline: 1px solid blue;
-  
   display: flex;
   flex-wrap: wrap;
 
@@ -309,12 +312,9 @@ ul {
 
   margin-top: 50px;
   margin-bottom: 94px;
-
 }
 
 .team-list > .team-item {
-  outline: 1px solid green;
-
   flex-basis: calc(100% / 4 - 18px);
 
   margin-top: 18px;
@@ -400,4 +400,3 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
