@@ -208,7 +208,7 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   margin-top: 94px;
 }
 
@@ -285,7 +285,7 @@ ul {
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .project-list > .project-item {
