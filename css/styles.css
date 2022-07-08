@@ -73,13 +73,13 @@ ul {
 /* Header */
 
 .header {
-   border: 5px var(--accent-color);
+   border-bottom: 5px var(--accent-color);
 }
 
 .header-containers {
   display: flex;
   align-items: center;
-  border: 5px var(--accent-color);
+  border-bottom: 5px  var(--accent-color);
  }
 
 .header-logotip {
@@ -208,7 +208,8 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  margin-top: 94px;
 }
 
 .btn {
