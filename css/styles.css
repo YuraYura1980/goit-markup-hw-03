@@ -129,6 +129,7 @@ ul {
 }
 
 .header-link-mail {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,6 +142,7 @@ ul {
 }
 
 .header-link-tel {
+  display: flex;
   margin-right: 0;
   font-weight: 500;
   font-size: 14px;
@@ -155,6 +157,7 @@ ul {
 .link:hover,
 .link:focus {
   color: var(--activ-color);
+  transform: scale(1.03);
 }
 
 /* main */
@@ -174,8 +177,7 @@ ul {
 .btn {
   border-radius: 4px;
 
-  width: 128px;
-  height: 38px;
+  padding: 6px 22px;
 
   margin-right: 8px;
 
@@ -193,7 +195,9 @@ ul {
 
 .btn:hover,
 .btn:focus {
-  color: var(--activ-color);
+  color: var(--second-color);
+  background-color: var(--activ-color);
+  transform: scale(1.03);
 }
 
 /* project*/
@@ -217,6 +221,7 @@ ul {
 }
 
 .project-text {
+  display: flex;
   text-align: start;
   padding-left: 24px;
 
@@ -227,8 +232,6 @@ ul {
 
   padding-top: 20px;
   padding-bottom: 20px;
-
-  /* padding-bottom: 4px; */
 
   background-color: var(--second-color);
 }
