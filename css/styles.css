@@ -83,9 +83,10 @@ ul {
 .header-containers {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
-
-  /* border-bottom-color: 1px #ececec; */
+  
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ececec;
 }
 
 .header-logotip {
